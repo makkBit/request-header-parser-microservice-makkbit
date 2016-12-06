@@ -1,0 +1,22 @@
+{
+  "name": "requestheaderparsermicroservice",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/makkBit/request-header-parser-microservice-makkbit.git"
+  },
+  "keywords": [
+    "api"
+  ],
+  "author": "mahak",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/makkBit/request-header-parser-microservice-makkbit/issues"
+  },
+  "homepage": "https://github.com/makkBit/request-header-parser-microservice-makkbit#readme"
+}
