@@ -16,23 +16,18 @@ app.get('/', (req, res) => {
 app.get('/api/whoami', (req,res) => {
 	//ip
 	let clientIp = req.ip;
-
+	let ipResult = clientIp.slice(clientIp.indexOf('1'), clientIp.length);
 
 	//lang
 	let clientLang = req.headers['accept-language'];
 	let langResult = clientLang.slice(0, clientLang.indexOf(','));
 
-	//
+	//os
 	let clientOs = req.headers['user-agent'];
 	let osResult = clientOs.slice(clientOs.indexOf(';')+2, clientOs.indexOf(')') );
 
-	// console.log(clientIp);
-	// console.log(langResult);
-	// console.log(osResult);
-	
-	// res.send(clientIp+clientLang+clientOs);
 	res.json({
-		ipaddress: clientIp,
+		ipaddress: ipResult,
 		language:langResult,
 		os: osResult
 	});
