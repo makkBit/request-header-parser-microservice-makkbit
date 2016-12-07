@@ -7,6 +7,7 @@ const port = process.env.PORT || 8080;
 
 app.set('views', './views');
 app.set('view engine', 'pug');
+app.enable('trust proxy')
 
 
 app.get('/', (req, res) => {
