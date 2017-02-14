@@ -1,23 +1,26 @@
 html
-	head
-		title request header parser
-		style
-			include css/style.css
-			include css/bootstrap.min.css
+  head
+    title request header parser
+    style
+      include css/style.css
+      include css/bootstrap.min.css
+    meta(name="viewport" content="width=device-width, initial-scale=1")
 
-	body(class='text-center')
-		div(class='page-header')
-			h1 Request Header Parser Microservice
-		h3 User Stories:
-		ol(class='well')
-			li I can get the IP address, language and operating system for my browser.
-		h3 Example usage:
-		p(class='well') 
-			|https://request-header-parser-makkbit.herokuapp.com/api/whoami
-		p(class='well') 
-			|{"ipaddress":"XXX.XXX.XXX.XX", "language":"en-US", "os":"Linux i686"}
-		a(class='repo' href="https://github.com/makkBit/request-header-parser-microservice-makkbit", target="_blank") github repo
-		br
-		br
-		p made by
-			a(href="https://twitter.com/makk_bit", target="_blank")  mahak
+
+
+  body(class='text-center')
+  #box1.box.blurred-bg(class='text-center')
+    .content
+      h3 request header parser
+      blockquote(class="bscallout") Get the IP address, language and operating system for your browser in JSON response.
+      h4 Example usage:
+      p(class='well') 
+        |https://request-header-parser-makkbit.herokuapp.com/api/whoami
+      h4 Sample Output:
+      p(class='well') 
+        |{"ipaddress":"XXX.XXX.XXX.XX", "language":"en-US", "os":"Linux i686"}
+
+      a(class='repo' href="https://github.com/makkBit/request-header-parser-microservice-makkbit", target="_blank") github repo
+      br
+      p made by
+        a(href="https://twitter.com/makk_bit", target="_blank")  mahak
